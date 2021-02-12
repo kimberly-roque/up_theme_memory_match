@@ -47,7 +47,7 @@ body{
 }
 
 .face{
-    background-image: url("./assets/images/up-theme-images/sky_balloon_image.jpg");
+    background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
     background-size:cover;
     height:100%;
     width:100%;
@@ -55,7 +55,7 @@ body{
 }
 
 .back{
-    background-image: url("./assets/images/up-theme-images/balloon-costa-rica.jpg");
+    background-image: url("../images/up-theme-images/balloon-costa-rica.jpg");
     background-size:cover;
     height:100%;
     width:100%;
