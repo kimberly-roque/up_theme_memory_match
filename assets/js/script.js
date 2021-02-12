@@ -1,20 +1,27 @@
-$(document).ready(initializeApp)
+$(document).ready(initializeApp);
+
+var firstCardClicked = null;
+var secondCardClicked = null;
+var matches = null;
 
 function initializeApp() {
-  var selectFirstCard = $('.face');
-  selectFirstCard.click(handleCardClick);
+  var card = $('.face');
+  card.click(handleCardClick);
 }
 
 function handleCardClick(event) {
-  $(event.currentTarget).addClass("hidden")
-  var selectFirstCard = $('.face')
-  if (selectFirstCard) {
-    console.log(selectFirstCard);
-    var img1 = selectFirstCard.siblings().css("background-image");
-    console.log('first image:', img1)
-  } else {
-    selectSecondCard = $(event.currentTarget);
-    var img2 = secondCardClicked.siblings().css("background-image");
-    console.log('second image', img2);
+  $(event.currentTarget).addClass("hidden");
+  if (!firstCardClicked) {
+    firstCardClicked = $(event.currentTarget)
+    var img1 = firstCardClicked.css("background-image");
+    console.log('image 1:', img1)
+  }
+  else if (firstCardClicked && secondCardClicked === null) {
+    secondCardClicked = $(event.currentTarget);
+    var img2 = secondCardClicked.css("background-image");
+    console.log('image 2:', img2);
+  }
+  if (img1 === img2) {
+    console.log('cards match');
   }
 }
