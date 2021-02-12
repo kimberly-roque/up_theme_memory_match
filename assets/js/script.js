@@ -5,8 +5,8 @@ var secondCardClicked = null;
 var matches = null;
 
 function initializeApp() {
-  var selectFirstCard = $('.face');
-  selectFirstCard.click(handleCardClick);
+  var card = $('.face');
+  card.click(handleCardClick);
 }
 
 function handleCardClick(event) {
