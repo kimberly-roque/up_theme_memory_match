@@ -3,6 +3,8 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
+var max_matches =  2;
+
 
 function initializeApp() {
   var card = $('.face');
