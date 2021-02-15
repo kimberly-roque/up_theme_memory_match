@@ -51,12 +51,12 @@ body{
     height:100%;
 }
 
+
 .face{
     background-image: url("../images/up-theme-images/balloon-costa-rica.jpg");
     background-size:cover;
     height:100%;
     width:100%;
-    z-index: 1;
 }
 
 .hidden{
@@ -65,28 +65,33 @@ body{
 
 .dog{
     background-image: url("../images/up-theme-images/alpha-doberman.png");
-
+    background-size:cover;
 }
 
 .bird{
     background-image: url("../images/up-theme-images/bird.png");
+    background-size:cover;
 }
 
 .carl{
     background-image: url("../images/up-theme-images/carl.png");
+    background-size:cover;
 
 }
 
 .charles{
     background-image: url("../images/up-theme-images/charles-muntz.png");
+    background-size:cover;
 }
 
 .ellie{
     background-image: url("../images/up-theme-images/ellie.png");
+    background-size:cover;
 }
 
 .balloon{
     background-image: url("../images/up-theme-images/hiclipart.com.png");
+    background-size:cover;
 }
 
 .old{
@@ -94,7 +99,7 @@ body{
 }
 
 .kid{
-    background-image: url("../images/up-theme-images/pngbarn.png");
+    background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
     background-size: cover;
     width:100%;
     height:100%;
