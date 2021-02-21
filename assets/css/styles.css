@@ -28,6 +28,7 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 position: absolute;
+border-radius: 10%;
 }
 
 .container{
@@ -113,33 +114,28 @@ main{
 
 .dog{
     background-image: url("../images/up-theme-images/alpha-doberman.png");
-    background-size:cover;
 }
 
 .bird{
     background-image: url("../images/up-theme-images/bird.png");
-    background-size:cover;
+    background-position-y: 2px;
 }
 
 .carl{
     background-image: url("../images/up-theme-images/carl.png");
-    background-size:cover;
-
 }
 
 .charles{
     background-image: url("../images/up-theme-images/charles-muntz.png");
-    background-size:cover;
+    background-position-y: 2px;
 }
 
 .ellie{
     background-image: url("../images/up-theme-images/ellie.png");
-    background-size:cover;
 }
 
 .balloon{
     background-image: url("../images/up-theme-images/hiclipart.com.png");
-    background-size:cover;
 }
 
 .old{
@@ -147,18 +143,13 @@ main{
 }
 
 .kid{
-    background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
-    background-size: cover;
-    width:100%;
-    height:100%;
+    background-image: url("../images/up-theme-images/pngbarn.png");
 }
 
 .dug{
     background-image: url("../images/up-theme-images/dug.png");
-    background-size: cover;
 }
 
 .ellie{
     background-image: url("../images/up-theme-images/ellie.png");
-    background-size: cover;
 }
