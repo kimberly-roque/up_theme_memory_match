@@ -14,10 +14,20 @@ header{
 
 .card{
   width: 14%;
-  background-image: url("../images/up-theme-images/dug.png");
   background-size: cover;
+  background-color: antiquewhite;
   background-position-x: center;
   margin: 5px;
+  position: relative;
+}
+
+.card-front, .card-back {
+height: 100%;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position: absolute;
 }
 
 .container{
