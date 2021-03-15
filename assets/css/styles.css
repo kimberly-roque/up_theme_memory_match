@@ -15,20 +15,9 @@ header{
 .card{
   width: 14%;
   background-size: cover;
-  background-color: antiquewhite;
   background-position-x: center;
   margin: 5px;
   position: relative;
-}
-
-.card-front, .card-back {
-height: 100%;
-width: 100%;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-position: absolute;
-border-radius: 10%;
 }
 
 .container{
@@ -112,6 +101,16 @@ main{
     display:none;
 }
 
+.card-back, .card-front{
+height: 100%;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position: absolute;
+border-radius: 10%;
+}
+
 .dog{
     background-image: url("../images/up-theme-images/alpha-doberman.png");
 }
@@ -152,4 +151,8 @@ main{
 
 .ellie{
     background-image: url("../images/up-theme-images/ellie.png");
+}
+
+.card-back {
+  background-image: url("../images/up-theme-images/balloon-costa-rica.jpg");
 }

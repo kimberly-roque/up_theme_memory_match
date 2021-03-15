@@ -12,6 +12,10 @@ function initializeApp() {
 }
 
 function handleCardClick(event) {
+  if (event.target.className.indexOf("card-back") === -1) {
+    return;
+  }
+
   $(event.currentTarget).addClass("hidden");
   if (!firstCardClicked) {
     firstCardClicked = $(event.currentTarget)
