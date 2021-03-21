@@ -1,5 +1,3 @@
-$(document).ready(initializeApp);
-
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
