@@ -1,25 +1,17 @@
 var firstCardClicked = null;
 var secondCardClicked = null;
-var matches = null;
-var max_matches =  2;
+var gameCards = document.getElementById('gameCards');
+var maxMatches = 10;
+var matches = 0;
+
+gameCards.addEventListener("click", handleClick);
 
 
-function initializeApp() {
-  var card = $('.face');
-  card.click(handleCardClick);
-}
-
-function handleCardClick(event) {
+function handleClick(event) {
   if (event.target.className.indexOf("card-back") === -1) {
     return;
   }
 
-  $(event.currentTarget).addClass("hidden");
-  if (!firstCardClicked) {
-    firstCardClicked = $(event.currentTarget)
-    var img1 = firstCardClicked.css("background-image");
-    console.log('image 1:', img1)
-  }
   else if (firstCardClicked && secondCardClicked === null) {
     secondCardClicked = $(event.currentTarget);
     var img2 = secondCardClicked.css("background-image");
