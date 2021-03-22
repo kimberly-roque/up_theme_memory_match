@@ -97,8 +97,8 @@ main{
   width: 96%;
 }
 
-.hidden{
-    display:none;
+.hidden {
+  display: none;
 }
 
 .card-back, .card-front{
