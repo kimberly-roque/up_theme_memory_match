@@ -3,7 +3,7 @@ var secondCardClicked = null;
 var firstCardClasses;
 var secondCardClasses;
 var gameCards = document.getElementById('gameCards');
-var maxMatches = 2;
+var maxMatches = 10;
 var matches = 0;
 
 gameCards.addEventListener("click", handleClick);
