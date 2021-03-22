@@ -5,6 +5,7 @@ var secondCardClasses;
 var gameCards = document.getElementById('gameCards');
 var maxMatches = 10;
 var matches = 0;
+var attempts = 0;
 
 gameCards.addEventListener("click", handleClick);
 
@@ -21,6 +22,7 @@ function handleClick(event) {
     console.log('first', firstCardClasses);
   } else {
     secondCardClicked = event.target;
+    attempts += 1;
     secondCardClasses = secondCardClicked.previousElementSibling.classList.value;
     secondCardClicked.classList.add("hidden");
     gameCards.removeEventListener("click", handleClick);
