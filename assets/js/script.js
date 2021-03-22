@@ -75,7 +75,11 @@ function displayStats() {
   accuracyElement.textContent = calculateAccuracy(attempts, matches);
 }
 
-function calculateAccuracy() {
-
-
+function calculateAccuracy(attempts, matches){
+  if (!attempts) {
+    calculatedAccuracy = "0%";
+    return calculatedAccuracy;
+  }
+  calculatedAccuracy = (matches / attempts).toFixed(2) * 100 + '%';
+  return calculatedAccuracy;
 }
