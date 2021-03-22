@@ -1,66 +1,171 @@
 body{
-    margin: 0px;
-}
-.header{
-    background-color: blue;
-    height: 80px;
+  height: 100vh;
+  background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
+  background-size: cover;
 }
 
-.main{
-    background-color:green;
-    display:flex;
-
-}
-.stats{
-    background-color: purple;
-    width:15%
-}
-
-.title{
-    height: 36px;
-    background-color: black;
-}
-.statsContent{
-    height:60px;
-    width: 140px;
-    background-color:blanchedalmond;
-    text-align: center;
-    margin: 5px;
-}
-
-.container{
-    background-color: orangered;
-    width: 100%;
-    height:100%;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
+header{
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 5px;
 }
 
 .card{
-    height: 150px;
-    width:140px;
-    background-color: yellow;
-    text-align: center;
-    margin: 10px;
-    position: relative;
+  width: 14%;
+  background-size: cover;
+  background-position-x: center;
+  margin: 5px;
+  position: relative;
 }
 
-.face{
-    background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
-    background-size:cover;
-    height:100%;
-    width:100%;
-    position: absolute;
+.container{
+  height: 100vh;
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
 }
 
-.back{
-    background-image: url("../images/up-theme-images/balloon-costa-rica.jpg");
-    background-size:cover;
-    height:100%;
-    width:100%;
+.row{
+  width: 100%;
+  display: flex;
+  margin-bottom: .5rem;
+  justify-content: center;
+  align-content: center;
 }
 
-.hidden{
-    display:none;
+aside{
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div.child{
+  width: 80%;
+  margin: 3px;
+  background-color:#009688;
+  padding-top: 30px;
+  text-align: center;
+  justify-content: right;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.col-1 {
+  width: 8%;
+}
+.col-2 {
+  width: 16%;
+}
+.col-3 {
+  width: 24%;
+}
+
+.col-4 {
+  width: 32%;
+}
+.col-5 {
+  width: 40%;
+}
+.col-6 {
+  width: 48%;
+}
+
+.col-7 {
+  width: 56%;
+}
+.col-8 {
+  width: 64%;
+}
+.col-9 {
+  width: 72%;
+}
+
+.col-10 {
+  width: 70%;
+}
+.col-11 {
+  width: 88%;
+}
+.col-12 {
+  width: 96%;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-back, .card-front{
+height: 100%;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position: absolute;
+border-radius: 10%;
+}
+
+.dog{
+    background-image: url("../images/up-theme-images/alpha-doberman.png");
+}
+
+.bird{
+    background-image: url("../images/up-theme-images/bird.png");
+    background-position-y: 2px;
+}
+
+.carl{
+    background-image: url("../images/up-theme-images/carl.png");
+}
+
+.charles{
+    background-image: url("../images/up-theme-images/charles-muntz.png");
+    background-position-y: 2px;
+}
+
+.ellie{
+    background-image: url("../images/up-theme-images/ellie.png");
+}
+
+.balloon{
+    background-image: url("../images/up-theme-images/hiclipart.com.png");
+}
+
+.old{
+    background-image: url("../images/up-theme-images/olderellieandcarl.png");
+}
+
+.kid{
+    background-image: url("../images/up-theme-images/pngbarn.png");
+}
+
+.dug{
+    background-image: url("../images/up-theme-images/dug.png");
+}
+
+.ellie{
+    background-image: url("../images/up-theme-images/ellie.png");
+}
+
+.card-back {
+  background-image: url("../images/up-theme-images/balloon-costa-rica.jpg");
+}
+
+.modal-overlay{
+  background-color: turquoise;
+  width: 30%;
+  height: 50%;
+  top: 30%;
+  left: 40%;
+  z-index: 1;
+  position:fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
