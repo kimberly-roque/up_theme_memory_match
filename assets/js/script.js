@@ -7,6 +7,7 @@ var maxMatches = 10;
 var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
+var accuracy = 0;
 
 gameCards.addEventListener("click", handleClick);
 
@@ -43,7 +44,11 @@ function handleClick(event) {
         console.log("You Won!!!");
         var modal = document.createElement("div");
         modal.classList.add("modal-overlay");
-        modal.textContent = "You Win";
+        modal.textContent = "Congratulations, YOU WON!!!";
+        var resetButton = document.createElement("button");
+            resetButton.classList.add("resetButton");
+            resetButton.textContent = "Would You Like To Play Again?";
+            modal.append(modalContent, resetButton);
         var container = document.querySelector(".container");
         var body = document.querySelector('body');
         body.insertAdjacentElement('afterbegin', modal);
