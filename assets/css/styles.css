@@ -2,6 +2,7 @@ body{
   height: 100vh;
   background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
   background-size: cover;
+  opacity: 0.7;
 }
 
 header{
@@ -10,6 +11,8 @@ header{
   text-align: center;
   font-size: 50px;
   padding-top: 5px;
+  font-family: cursive;
+  color: beige;
 }
 
 .card{
@@ -45,7 +48,7 @@ aside{
 div.child{
   width: 80%;
   margin: 3px;
-  background-color:#009688;
+  background-color: rgb(241, 172, 23);
   padding-top: 30px;
   text-align: center;
   justify-content: right;
