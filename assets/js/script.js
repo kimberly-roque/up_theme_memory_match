@@ -95,7 +95,7 @@ function calculateAccuracy(attempts, matches){
   return calculatedAccuracy;
 }
 
-function restGame(){
+function resetGame(){
   var modal = document.querySelector(".modal-overlay");
   modal.classList.add("hidden");
   maxMatches = 2;
@@ -103,4 +103,13 @@ function restGame(){
   attempts = 0;
   gamesPlayed += 1;
   displayStats();
+  resetCards();
+}
+
+function resetCards(){
+  var hiddenCards = document.querySelectorAll('.card-back');
+  for (var index = 0; index < hiddenCards.length; index++){
+    var card = hiddenCards[index];
+    card.classList.remove("hidden");
+  }
 }
