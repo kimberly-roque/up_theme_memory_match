@@ -2,6 +2,7 @@ body{
   height: 100vh;
   background-image: url("../images/up-theme-images/sky_balloon_image.jpg");
   background-size: cover;
+  opacity: 0.7;
 }
 
 header{
@@ -10,6 +11,8 @@ header{
   text-align: center;
   font-size: 50px;
   padding-top: 5px;
+  font-family: cursive;
+  color: beige;
 }
 
 .card{
@@ -45,7 +48,7 @@ aside{
 div.child{
   width: 80%;
   margin: 3px;
-  background-color:#009688;
+  background-color: rgb(241, 172, 23);
   padding-top: 30px;
   text-align: center;
   justify-content: right;
@@ -158,9 +161,12 @@ border-radius: 10%;
 }
 
 .modal-overlay{
-  background-color: turquoise;
-  width: 30%;
-  height: 50%;
+  background-color:#943326;
+  font-family: cursive;
+  font-size: 20px;
+  width: 25%;
+  color: #d7a211;
+  height: 35%;
   top: 30%;
   left: 40%;
   z-index: 1;
@@ -168,4 +174,12 @@ border-radius: 10%;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.modal-overlay > div{
+  margin-top: 25%;
+}
+
+button{
+  margin-top: 5%;
 }
