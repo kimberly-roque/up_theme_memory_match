@@ -3,7 +3,7 @@ var secondCardClicked = null;
 var firstCardClasses;
 var secondCardClasses;
 var gameCards = document.getElementById('gameCards');
-var maxMatches = 1;
+var maxMatches = 10;
 var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
@@ -22,14 +22,12 @@ function handleClick(event) {
     firstCardClicked =  event.target;
     firstCardClasses = firstCardClicked.previousElementSibling.classList.value;
     firstCardClicked.classList.add("hidden");
-    console.log('first', firstCardClasses);
 
   } else {
 
       secondCardClicked = event.target;
       attempts += 1;
       displayStats();
-      console.log('attempts', attempts);
       secondCardClasses = secondCardClicked.previousElementSibling.classList.value;
       secondCardClicked.classList.add("hidden");
       gameCards.removeEventListener("click", handleClick);
@@ -38,30 +36,25 @@ function handleClick(event) {
         gameCards.addEventListener("click", handleClick);
       }, 2000 );
 
-      console.log('second', firstCardClasses);
-
       if (firstCardClasses === secondCardClasses) {
         matches += 1;
-        console.log('matches', matches);
         if (matches === maxMatches) {
-          console.log("You Won!!!");
           var modal = document.createElement("div");
           var modalContent = document.createElement("div");
-              modal.classList.add("modal-overlay");
-              modalContent.textContent = "Congratulations, YOU WON!!!";
+          modal.classList.add("modal-overlay");
+          modalContent.textContent = "Congratulations, YOU WON!!!";
           var resetButton = document.createElement("button");
-              resetButton.classList.add("resetButton");
-              resetButton.textContent = "Would You Like To Play Again?";
-              resetButton.addEventListener("click", resetGame);
-              modal.appendChild(modalContent);
-              modalContent.appendChild(resetButton);
+          resetButton.classList.add("resetButton");
+          resetButton.textContent = "Would You Like To Play Again?";
+          resetButton.addEventListener("click", resetGame);
+          modal.appendChild(modalContent);
+          modalContent.appendChild(resetButton);
           var container = document.querySelector(".container");
           var body = document.querySelector('body');
           body.insertAdjacentElement('afterbegin', modal);
         }
         firstCardClicked = null;
         secondCardClicked = null;
-        console.log('match success');
         return;
       } else {
           setTimeout( function() {
@@ -72,7 +65,6 @@ function handleClick(event) {
             firstCardClicked = null;
             secondCardClicked = null;
           }, 2000);
-          console.log('no match');
       }
     }
   }
@@ -98,7 +90,7 @@ function calculateAccuracy(attempts, matches){
 function resetGame(){
   var modal = document.querySelector(".modal-overlay");
   modal.classList.add("hidden");
-  maxMatches = 1;
+  maxMatches = 10;
   matches = 0;
   attempts = 0;
   gamesPlayed += 1;
