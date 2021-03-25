@@ -161,9 +161,12 @@ border-radius: 10%;
 }
 
 .modal-overlay{
-  background-color: turquoise;
-  width: 30%;
-  height: 50%;
+  background-color:#943326;
+  font-family: cursive;
+  font-size: 20px;
+  width: 25%;
+  color: #d7a211;
+  height: 35%;
   top: 30%;
   left: 40%;
   z-index: 1;
@@ -171,4 +174,12 @@ border-radius: 10%;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.modal-overlay > div{
+  margin-top: 25%;
+}
+
+button{
+  margin-top: 5%;
 }

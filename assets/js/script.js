@@ -3,7 +3,7 @@ var secondCardClicked = null;
 var firstCardClasses;
 var secondCardClasses;
 var gameCards = document.getElementById('gameCards');
-var maxMatches = 10;
+var maxMatches = 1;
 var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
@@ -38,7 +38,7 @@ function handleClick(event) {
         gameCards.addEventListener("click", handleClick);
       }, 2000 );
 
-      console.log('second', firstCardClasses)
+      console.log('second', firstCardClasses);
 
       if (firstCardClasses === secondCardClasses) {
         matches += 1;
@@ -53,7 +53,8 @@ function handleClick(event) {
               resetButton.classList.add("resetButton");
               resetButton.textContent = "Would You Like To Play Again?";
               resetButton.addEventListener("click", resetGame);
-              modal.append(modalContent, resetButton);
+              modal.appendChild(modalContent);
+              modalContent.appendChild(resetButton);
           var container = document.querySelector(".container");
           var body = document.querySelector('body');
           body.insertAdjacentElement('afterbegin', modal);
@@ -97,7 +98,7 @@ function calculateAccuracy(attempts, matches){
 function resetGame(){
   var modal = document.querySelector(".modal-overlay");
   modal.classList.add("hidden");
-  maxMatches = 10;
+  maxMatches = 1;
   matches = 0;
   attempts = 0;
   gamesPlayed += 1;
