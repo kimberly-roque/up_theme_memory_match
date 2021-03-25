@@ -52,6 +52,7 @@ function handleClick(event) {
           var resetButton = document.createElement("button");
               resetButton.classList.add("resetButton");
               resetButton.textContent = "Would You Like To Play Again?";
+              resetButton.addEventListener("click", resetGame);
               modal.append(modalContent, resetButton);
           var container = document.querySelector(".container");
           var body = document.querySelector('body');
@@ -92,4 +93,14 @@ function calculateAccuracy(attempts, matches){
   }
   calculatedAccuracy = (matches / attempts).toFixed(2) * 100 + '%';
   return calculatedAccuracy;
+}
+
+function restGame(){
+  var modal = document.querySelector(".modal-overlay");
+  modal.classList.add("hidden");
+  maxMatches = 2;
+  matches = 0;
+  attempts = 0;
+  gamesPlayed += 1;
+  displayStats();
 }
