@@ -8,30 +8,24 @@ var matches = 0;
 var attempts = 0;
 var gamesPlayed = 0;
 var accuracy = 0;
-
 gameCards.addEventListener("click", handleClick);
 
 function handleClick(event) {
-
   if (event.target.className.indexOf("card-back") === -1) {
     return;
   }
 
   if (!firstCardClicked) {
-
     firstCardClicked =  event.target;
     firstCardClasses = firstCardClicked.previousElementSibling.classList.value;
     firstCardClicked.classList.add("hidden");
-
   } else {
-
       secondCardClicked = event.target;
       attempts += 1;
       displayStats();
       secondCardClasses = secondCardClicked.previousElementSibling.classList.value;
       secondCardClicked.classList.add("hidden");
       gameCards.removeEventListener("click", handleClick);
-
       setTimeout(function() {
         gameCards.addEventListener("click", handleClick);
       }, 2000 );
