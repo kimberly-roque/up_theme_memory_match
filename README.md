@@ -13,3 +13,6 @@ A memory match game featuring characters from Disney's Up
  * User can view accuracy stats on the left panel
  * User can win game when all matches are revealed
  * User can choose to replay game and reset the card deck
+
+## Frontend Design
+![memory match game view](assets/images/up-theme-images/memorymatch.png)
